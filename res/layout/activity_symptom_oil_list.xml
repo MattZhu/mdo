@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+ >
+    <include
+        android:id="@+id/mainTitle"
+        layout="@layout/titlebar_back" />
+    
+    <TextView 
+    	android:id="@+id/symptom_name"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	  android:layout_below="@id/mainTitle"
+    	android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#8C0B0B" 
+        />
+    <TextView 
+        android:id="@+id/symptom_description"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/symptom_name"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    
+	<fragment 
+        android:name="com.mdo.activity.fragment.BottomFragment"
+         android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" 
+        android:id="@+id/bottom"
+        android:background="@drawable/taskbar"        
+       
+        />    
+
+    <ListView
+        android:id="@+id/oil_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/symptom_description"
+        android:layout_above="@id/bottom" >
+    </ListView>
+    
+</RelativeLayout>

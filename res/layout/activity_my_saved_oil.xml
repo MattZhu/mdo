@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+ >
+
+    <include
+        android:id="@+id/mainTitle"
+        layout="@layout/titlebar_back" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainTitle"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:text="@string/my_saved_oil"
+        android:textSize="18sp"
+        android:textColor="#8C0B0B" />
+	<fragment 
+	    android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" 
+        android:id="@+id/bottom"
+        android:background="@drawable/taskbar"        
+        android:name="com.mdo.activity.fragment.SavedOilBottomFragment"
+	    />
+   
+   
+
+    <ListView
+        android:id="@+id/op_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_title"
+        android:layout_above="@id/bottom" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/oil_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/row_bg"
+            android:gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingStart="15dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/save_status"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:src="@drawable/not_saved_oil" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       >
+        <TextView
+            android:id="@+id/oil_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row_bg"
+            android:paddingBottom="5dp"
+            android:paddingEnd="50dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="50dp"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:textSize="16sp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/indicate" />
+    </RelativeLayout>
+
+</LinearLayout>

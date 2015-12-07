@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/symptom_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/row_bg"
+        android:gravity="center_vertical"
+        android:textColor="#8C0B0B"
+        android:textStyle="bold"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

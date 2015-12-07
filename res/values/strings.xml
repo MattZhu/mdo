@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mdo lite</string>
+    <string name="action_settings">Settings</string>
+	<string name="title">mdo</string>
+	
+	<string name="search">Search by Symptom</string>
+	<string name="oilprod">Oils and Products</string>	
+	<string name="mysaved">My Saved Oils</string>
+	<string name="quickref">Quick Reference</string>
+	<string name="about_cptg">About CPTG Oils</string>	
+	<string name="disclaimer">Disclaimer</string>	
+	<string name="purchase_oils">Purchase Oils</string>	
+	
+	<string name="loading_data">Data is loading...</string>
+	
+	<string name="save_oil_msg">Save this Oil?</string>	
+	<string name="un_save_oil_msg">Unsave this Oil?</string>
+	
+	<string name="dialog_disclaimer_msg">I agree to terms detailed in the mdō Terms of Use and Disclaimer.</string>
+	<string name="dialog_dicalaimer_agree">I AGREE</string>
+	<string name="dialog_disclaimer_full_text">Full Text</string>
+	<string name="disclaimer_text">Disclaimer</string>
+	
+	<!-- for settings -->
+	<string name="name_label">Name</string>
+	<string name="customer_number">Customer/IPC Nmuber</string>
+	<string name="rate_app">Rate This App</string>
+	<string name="sent_email">Tell a Friend</string>
+	<string name="gift_app">Gift This App</string>
+	<string name="like_on_fb">Like us on Facebook</string>
+	
+	<!-- Symptom search -->
+	<string name="general">General</string>
+	<string name="pregnancy">Pregnancy</string>
+	<string name="children">Children</string>
+	<string name="animal">Animal</string>
+	<string name="buy_pro">Buy Pro</string>
+
+	<string name="all">All</string>
+	
+	<string name="essential_oils">Essential Oils</string>
+	<string name="quick_ref_chart">Quick Reference Chart</string>
+	<string name="search_symptom">Search By Symptom</string>
+	<string name="search_hint">*Single word search terms work best</string>
+	
+	<string name="my_saved_oil">My Saved Oil</string>
+	<color name="white">#FFFFFF</color>
+	<string name="fb_app_id">319942664877202</string>
+	
+	<!-- Unlicensed dialog messages -->
+	
+	<string name="checking_license">Checking license</string>
+    <string name="unlicensed_dialog_title">Application not licensed</string>
+    <string name="unlicensed_dialog_body">This application is not licensed. Please purchase it from Android Market.</string>
+    <string name="unlicensed_dialog_retry_body">Unable to validate license. Check to see if a network connection is available.</string>
+    <string name="buy_button">Buy app</string>
+    <string name="retry_button">Retry</string>
+    <string name="quit_button">Exit</string>
+</resources>

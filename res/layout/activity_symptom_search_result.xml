@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+	android:focusableInTouchMode="true"
+    android:background="@color/white"
+ >
+    <include
+        android:id="@+id/mainTitle"
+        layout="@layout/titlebar_back" />
+
+    <TextView 
+        android:id="@+id/sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainTitle"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:text="@string/search_symptom"
+        android:textSize="18sp"
+        android:textColor="#8C0B0B" 
+         />
+
+    <AutoCompleteTextView
+        android:id="@+id/search_text"
+        android:background="@drawable/searchbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/sub_title" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+		android:layout_marginEnd="30dp"
+		android:imeOptions="actionSearch" 
+		android:inputType="text"
+        />
+    <TextView 
+        android:id="@+id/searhc_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@id/search_text" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+		android:layout_marginEnd="30dp"
+		android:text="@string/search_hint"        
+        
+        />
+    
+    <fragment 
+        android:name="com.mdo.activity.fragment.BottomFragment"
+         android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" 
+        android:id="@+id/bottom"
+        android:background="@drawable/taskbar"        
+       
+        />    
+    <ListView
+        android:id="@+id/op_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searhc_hint"
+        android:layout_above="@id/bottom" >
+    </ListView>
+
+
+ <LinearLayout
+        android:id="@+id/list_index"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/searhc_hint"
+        
+        android:orientation="vertical"
+         >
+    </LinearLayout>
+</RelativeLayout>

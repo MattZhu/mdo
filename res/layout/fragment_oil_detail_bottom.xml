@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/taskbar"        
+        >
+
+		<ImageView
+		    android:id="@+id/saved_oil"
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/saved_bottom"
+            />
+        <ImageView
+            android:id="@+id/saved_book"
+            android:layout_width="38dp"
+            android:layout_height="30dp" 
+            android:layout_toStartOf="@id/saved_oil"
+        	android:layout_toLeftOf="@id/saved_oil"   
+            android:src="@drawable/savedoilspage_btn"
+        	android:layout_marginRight="26dp"
+        	android:layout_marginLeft="26dp"
+        	android:layout_marginStart="26dp"
+        	android:layout_marginEnd="26dp"
+        	android:layout_centerVertical="true"
+            >
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/share_to_fb"
+            android:layout_width="38dp"
+            android:layout_height="30dp" 
+            android:layout_toEndOf="@id/saved_oil"
+        	android:layout_toRightOf="@id/saved_oil" 
+            android:src="@drawable/share_btn"
+        	android:layout_marginRight="26dp"
+        	android:layout_marginLeft="26dp"
+        	android:layout_marginStart="26dp"
+        	android:layout_marginEnd="26dp"
+        	android:layout_centerVertical="true"
+            >
+        </ImageView>
+		<ImageView
+            android:id="@+id/refresh"
+            android:layout_width="38dp"
+            android:layout_height="30dp" 
+            android:src="@drawable/refresh_db_btn"
+            android:layout_toStartOf="@id/saved_book"
+        	android:layout_toLeftOf="@id/saved_book"    
+        	android:layout_centerVertical="true"
+        
+             >
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/setting_icon"
+            android:layout_width="38dp"
+            android:layout_height="30dp" 
+            android:src="@drawable/references_btn"
+            android:layout_toRightOf="@id/share_to_fb"
+            android:layout_toEndOf="@id/share_to_fb"
+            android:layout_centerVertical="true"
+            >
+        </ImageView>
+    </RelativeLayout>
+   

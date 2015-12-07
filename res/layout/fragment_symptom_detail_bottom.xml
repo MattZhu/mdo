@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" 
+        android:id="@+id/bottom"
+        android:background="@drawable/taskbar"        
+        >
+
+		<ImageView
+		    android:id="@+id/empty"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/saved_book"
+            android:layout_width="38dp"
+            android:layout_height="30dp" 
+            android:layout_toStartOf="@id/empty"
+        	android:layout_toLeftOf="@id/empty"   
+            android:src="@drawable/savedoilspage_btn"
+        	android:layout_marginRight="15dp"
+        	android:layout_marginLeft="30dp"
+        	android:layout_marginStart="30dp"
+        	android:layout_marginEnd="15dp"
+        	android:layout_centerVertical="true"
+            >
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/share_to_fb"
+            android:layout_width="38dp"
+            android:layout_height="30dp" 
+            android:layout_toEndOf="@id/empty"
+        	android:layout_toRightOf="@id/empty" 
+            android:src="@drawable/share_btn"
+        	android:layout_marginRight="30dp"
+        	android:layout_marginLeft="15dp"
+        	android:layout_marginStart="15dp"
+        	android:layout_marginEnd="30dp"
+        	android:layout_centerVertical="true"
+            >
+        </ImageView>
+		<ImageView
+            android:id="@+id/refresh"
+            android:layout_width="38dp"
+            android:layout_height="30dp" 
+            android:src="@drawable/refresh_db_btn"
+            android:layout_toStartOf="@id/saved_book"
+        	android:layout_toLeftOf="@id/saved_book"    
+        	android:layout_centerVertical="true"
+        
+             >
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/setting_icon"
+            android:layout_width="38dp"
+            android:layout_height="30dp" 
+            android:src="@drawable/references_btn"
+            android:layout_toRightOf="@id/share_to_fb"
+            android:layout_toEndOf="@id/share_to_fb"
+            android:layout_centerVertical="true"
+            >
+        </ImageView>
+    </RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mainTitle"
+        layout="@layout/titlebar_back" />
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_symptom"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="#8C0B0B" 
+        />
+    <ListView
+        android:id="@+id/op_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/title"
+        android:src="@drawable/bottomoils" />
+
+</LinearLayout>
